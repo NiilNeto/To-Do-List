@@ -15,7 +15,8 @@ function AddTask() {
     card.style.maxWidth = "18rem";
 
     cardHeader.classList.add("card-header");
-    cardHeader.textContent = ".....";
+    // cardHeader.createElement("i")
+    cardHeader.textContent = "";
     cardBody.classList.add("card-body");
 
     card.appendChild(cardHeader);
@@ -37,6 +38,13 @@ function AddTask() {
 
     const buttonCard = document.createElement("button");
     buttonCard.textContent = "Atualizar";
+    buttonCard.onclick = function Atualizacao() {
+      
+      
+    }
+
+
+
     card.appendChild(buttonCard);
 
     // const cTexto = document.createElement("h3");
@@ -47,6 +55,10 @@ function AddTask() {
   inputBox.value = "";
   saveData();
 }
+
+
+
+
 
 listContainer.addEventListener(
   "click",
